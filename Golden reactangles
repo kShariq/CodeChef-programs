@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	int N,count=0;
+	scanf("%d", &N);
+	double a,b;
+	while(N--){
+		long int w,h;
+		double ratio;
+		scanf("%ld %ld",&w,&h);
+	    a=w;
+		b=h;
+		if(a>b)
+		ratio=a/b;
+		else
+		ratio=b/a;
+		if(ratio>=1.6 && ratio<=1.7)
+		{
+			count++;
+		}
+	}
+    printf("%d",count);
+	return 0;
+}
